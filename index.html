@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <title>Heba Adel - Portfolio</title>
+</head>
+
+  <body>
+
+    <div class="style__switcher">
+
+    </div>
+
+    <!-- ===================================== HEADER ===================================== -->
+
+    <header class="header">
+      <nav class="nav container">
+        <a class="nav__logo" href="#">Portfolio.</a>
+        <button class="nav__toggle" id="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav__list" id="nav-menu">
+          <li class="nav__item"><a class="nav__link active-link" href="#home">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+          <li class="nav__item"><a class="nav__link" href="#services">Services</a></li>
+          <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+      
+    <!-- ===================================== MAIN ===================================== -->
+
+    <main class="main">
+      <br>
+      <!-- ===================================== HOME ===================================== -->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+            <div class="home__content">
+                <span class="home__welcome">Hello, It's Me</span>
+                <h1 class="home__name">Heba Adel Ahmed</h1>
+                <h1 class="home__welcome">And I am <span id="dynamic-text"></span></h1>
+                <br>
+                <p class="home__description">
+                    Skilled .NET backend developer with expertise in building scalable, secure applications using ASP.NET Core, Entity Framework, and C#. Experienced in developing RESTful APIs, database design, and implementing JWT-based authentication. Strong knowledge of OOP, software architecture, and agile development practices.
+                </p>
+                <br>
+                <!-- Links to social media with icons -->
+                <div class="home__social-links">
+                  <a href="https://www.linkedin.com/in/heba-adel-ahmed/" target="_blank" class="social-icon">
+                      <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/iHebaMohammed" target="_blank" class="social-icon">
+                      <i class="fab fa-github"></i>
+                  </a>
+                  <a href="mailto:-hebaadel.dev@gmail.com" target="_blank" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a href="https://wa.me/+201001394765" target="_blank" class="social-icon">
+                      <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              <br>
+                <div class="home__btns">
+                    <a href="#contact" class="btn btn--filled">Hire Me</a>
+                    <a href="https://drive.google.com/file/d/1boII6fPUHqw1HMSsqwUY47uyIB9_YWBJ/view?usp=sharing" target="_blank" class="btn btn--outlined">Download CV</a>
+                </div>
+                <br>
+            </div>
+            <div class="home__img-wrapper">
+                <img src="assets/images/image-04.png" class="home__image" />
+            </div>
+        </div>
+    </section>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+      <section class="about" id="about">
+        <div class="about__container container">
+          <div class="about__image-wrapper">
+              <img src="assets/images/image-01.jpg" alt="Heba Adel" class="about__image" />
+          </div>
+          <div class="about__divider"></div>
+          <div class="about__content">
+              <h2>About Me</h2>
+              <p>
+                  I'm Heba Adel, a Full Stack .NET Developer with a passion for building scalable and secure web applications. I have experience working on both front-end and back-end development, utilizing technologies like ASP.NET Core, MVC, Entity Framework, and SQL Server. I’ve also worked with front-end frameworks like React, and I have a solid grasp of RESTful APIs, cloud integration, and modern development practices. I’ve contributed to projects like e-commerce platforms, digital pharmacies, and custom web applications, applying design patterns like Repository and Unit of Work. I love learning new things, solving complex technical challenges, and delivering high-quality solutions.
+              </p>
+              <div class="home__social-links">
+                <a href="https://www.linkedin.com/in/heba-adel-ahmed/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/iHebaMohammed" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:-hebaadel.dev@gmail.com" target="_blank" class="social-icon">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/+201001394765" target="_blank" class="social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br><br>        <br><br>
+      </section>
+
+      <!-- ===================================== SERVICES ===================================== -->
+      <section class="services" id="services">
+        <div class="services__container container">
+            <h2>My Services</h2>
+            <br>
+            <br>
+            <div class="services__grid">
+                <!-- Backend Development Service -->
+                <div class="service">
+                    <i class="fas fa-server service__icon"></i>
+                    <h3 class="service__title">Backend Development</h3>
+                    <p class="service__description">
+                        I specialize in building scalable and secure server-side applications using technologies like ASP.NET Core.
+                    </p>
+                </div>
+                <!-- Frontend Development Service -->
+                <div class="service">
+                    <i class="fas fa-laptop-code service__icon"></i>
+                    <h3 class="service__title">Frontend Development</h3>
+                    <p class="service__description">
+                        Experienced in creating responsive and interactive web interfaces using Angular, HTML, CSS, and JavaScript.
+                    </p>
+                </div>
+                <!-- Mobile Development Service -->
+                <div class="service">
+                    <i class="fas fa-mobile-alt service__icon"></i>
+                    <h3 class="service__title">Mobile Development</h3>
+                    <p class="service__description">
+                        Experienced in creating user-friendly mobile applications using Flutter, ensuring optimal performance across devices.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br><br>        <br><br>
+      </section>
+
+
+<!-- ===================================== PROJECTS ===================================== -->
+<section class="projects" id="projects">
+  <div class="projects__container container">
+      <h2>Projects</h2>
+      <br>
+      <br>
+      <div class="projects__grid">
+
+        <div class="project">
+            <img src="assets/images/project-image/Talabat-Clone.png" alt="Talabat Clone APIs" class="project__image" />
+            <div class="project__overlay">
+                <h3 class="project__title">Talabat Clone APIs</h3>
+                <p class="project__description">The Talabat clone API allows users to browse menus, place food delivery orders, and integrate payments.</p>
+                <div class="project__links">
+                    <a href="https://github.com/iHebaMohammed/Talabat-Clone" target="_blank" class="project__link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://drive.google.com/file/d/19RD2QabT40Gz3_DU0P8ny6NEJnpwDrAa/view?usp=sharing" target="_blank" class="project__link">
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+         
+        <div class="project">
+            <img src="assets/images/project-image/Bloggie.png" alt="Bloggie" class="project__image" />
+            <div class="project__overlay">
+                <h3 class="project__title">Bloggie</h3>
+                <p class="project__description">Bloggie is a blog platform built with ASP.NET Core MVC for easy content creation and management.</p>
+                <div class="project__links">
+                    <a href="https://github.com/iHebaMohammed/Bloggie" target="_blank" class="project__link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1GW--1X82au8aL4KsDjcbLapR0az68460/view?usp=sharing" target="_blank" class="project__link">
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+          <!-- Project 4: White Lagoon -->
+          <div class="project">
+              <img src="assets/images/project-image/Magic-villa.png" alt="White Lagoon" class="project__image" />
+              <div class="project__overlay">
+                  <h3 class="project__title">Magic Villa</h3>
+                  <p class="project__description">Magic Villa is a CRUD API that manages villas and rooms for short-term stays.</p>
+                  <div class="project__links">
+                      <a href="https://github.com/iHebaMohammed/Magic-Villa" target="_blank" class="project__link">
+                          <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://drive.google.com/file/d/1RnE3GgABNkknhPM9AknP5uDNTcB53JCE/view?usp=sharing" target="_blank" class="project__link">
+                          <i class="fas fa-eye"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+        <!-- Project 2: Saydalia Online -->
+        <div class="project">
+            <img src="assets/images/project-image/Sayalia-online.png" alt="Saydalia online" class="project__image" />
+            <div class="project__overlay">
+                <h3 class="project__title">Saydalia Online</h3>
+                <p class="project__description">Saydalia Online is a digital pharmacy that makes it easy to get the medicines and health products you need from home.</p>
+                <div class="project__links">
+                    <a href="https://github.com/iHebaMohammed/Saydalia-Online" target="_blank" class="project__link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1WssFZgSd7JUwkSJRpXxd6wlrhfGHXcDO/view?usp=sharing" target="_blank" class="project__link">
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+          <!-- Project 5: MobiCare -->
+          <!-- <div class="project">
+              <img src="assets/images/project-image/MobiCare.png" alt="MobiCare" class="project__image" />
+              <div class="project__overlay">
+                  <h3 class="project__title">MobiCare</h3>
+                  <p class="project__description">MobiCare is a healthcare platform developed with blockchain integration, allowing users to securely access and manage medical records and health services via mobile apps.</p>
+                  <div class="project__links">
+                      <a href="https://github.com/iHebaMohammed/MobiCare" target="_blank" class="project__link">
+                          <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://drive.google.com/file/d/1EUmQ_A1kLtU4J-l-fBWhbsDSGyQtnRDY/view?usp=sharing" target="_blank" class="project__link">
+                          <i class="fas fa-eye"></i>
+                      </a>
+                  </div>
+              </div>
+          </div> -->
+
+          <!-- Project 6: Cashier System -->
+          <!-- <div class="project">
+              <img src="assets/images/project-image/Cashier-System.png" alt="Cashier System" class="project__image" />
+              <div class="project__overlay">
+                  <h3 class="project__title">Cashier System</h3>
+                  <p class="project__description">Cashier System is a point-of-sale (POS) application built for small and medium-sized businesses, featuring inventory management, transaction history, and real-time financial tracking.</p>
+                  <div class="project__links">
+                      <a href="https://github.com/iHebaMohammed/Cashier-System" target="_blank" class="project__link">
+                          <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://drive.google.com/file/d/1D1G0Og0LKik-KwxknhcPAwHvNQ5tM9Z4/view?usp=sharing" target="_blank" class="project__link">
+                          <i class="fas fa-eye"></i>
+                      </a>
+                  </div>
+              </div>
+          </div> -->
+      </div>
+  </div>
+  <br><br> 
+</section>
+
+
+
+
+<section class="contact" id="contact">
+    <h2 class="contact__title">Let's Get in Touch!</h2>
+    
+    <div class="contact__container container">
+        <form id="contactForm" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="from_name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="to_name" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--filled">Send Message</button>
+        </form>
+        <div id="responseMessage"></div>
+    </div>
+</section>
+
+    <!-- ===================================== FOOTER ===================================== -->
+      <footer class="footer">
+      <div class="footer__container container">
+          <div class="footer__social-links">
+              <a href="https://www.linkedin.com/in/heba-adel-ahmed/" target="_blank" class="social-icon">
+                  <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/iHebaMohammed" target="_blank" class="social-icon">
+                  <i class="fab fa-github"></i>
+              </a>
+              <a href="mailto:hebaadel.dev@gmail.com" target="_blank" class="social-icon">
+                  <i class="fas fa-envelope"></i>
+              </a>
+              <a href="https://wa.me/+201001394765" target="_blank" class="social-icon">
+                  <i class="fab fa-whatsapp"></i>
+              </a>
+          </div>
+          <p class="footer__description">
+              © 2024 Heba Adel. All Rights Reserved.
+          </p>
+      </div>
+      </footer>
+
+
+    </main>
+
+    <script src="assets/js/script.js"></script>
+
+  </body>
+</html>
