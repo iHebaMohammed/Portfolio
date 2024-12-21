@@ -40,6 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
       navMenu.classList.toggle('show-menu');
   });
 
+  navMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('show-menu');
+});
+
   // Dynamic text typing effect
   const dynamicText = document.getElementById("dynamic-text");
   const texts = ["Full Stack Developer", ".NET Developer"];
@@ -85,4 +89,3 @@ document.getElementById('contactForm').addEventListener('submit', function(event
             console.error(err);
         });
 });
-
